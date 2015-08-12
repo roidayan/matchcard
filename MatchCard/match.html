@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>MatchCard Widget</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <script type="text/javascript" src="match.js">
+        </script>
+        <style type="text/css">
+            @import "decoration.css";
+        </style>
+    </head>
+    <body id="body" class="portrait">
+	<embed type="application/x-systeminfo-widget" hidden="yes" style="display:none;" />
+	<div>
+		<table id="main" class="portrait" border="1" cellpadding="0" cellspacing="0">
+			<tr><td align="center">
+				<div id="header">Loading...</div>
+				<div id="info" style="display: none;" onclick="closeInfo()">
+					<script type="text/javascript">
+						about();
+					</script>
+				</div>
+				<div id="field" style="display: none;">
+					<table id="table" cellpadding="0" cellspacing="0" border="0">
+						<!-- Draw field here //-->
+					</table>
+					<div id="timer">00:00</div>
+					<div id="buttons">
+						<div id="button-exit" onclick="vbrbasic(); setTimeout('window.close()',200);"><img src="images/icon_close.gif"/></div>
+						<div id="button-reset" onclick="playGame();"><img src="images/icon_reset.gif"/></div>
+						<div id="button-info" onclick="showInfo();"><img src="images/icon_info.png"/></div>
+					</div>
+				</div>
+			</td></tr>
+		</table>
+	</div>
+	<script type="text/javascript">
+		init();
+	</script>
+    </body>
+</html>

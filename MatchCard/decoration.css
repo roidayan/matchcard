@@ -1,0 +1,91 @@
+* {
+		padding: 0;
+   	margin: 0;
+   	border: 0;
+}
+
+body {
+}
+
+#main.portrait {
+	background: url(images/background.gif) no-repeat;
+	height: 640px;
+	width: 360px;
+}
+
+#main.horizontal {
+	background: url(images/background2.gif) no-repeat;
+	height: 360px;
+	width: 640px;
+}
+
+#buttons {
+	position:absolute;
+	top: 580px;
+}
+
+#button-exit {
+	position:absolute;
+}
+.portrait #button-exit {
+}
+.horizontal #button-exit {
+	left:30px;
+	bottom:250px;
+}
+
+#button-reset {
+	position:absolute;
+}
+.portrait #button-reset {
+	left:150px;
+}
+.horizontal #button-reset {
+	left:30px;
+	bottom:400px;
+}
+
+#button-info {
+	position:absolute;
+}
+.portrait #button-info {
+	left:300px;
+}
+.horizontal #button-info {
+	left:560px;
+	bottom:420px;
+}
+
+#timer {
+	position:absolute;
+	font-weight: bold;
+	font-family: tahoma, verdana, helvetica, sans-serif;
+	font-size: 25px;
+	padding: 20px 0px 0px 0px;
+	color: cyan;
+}
+.portrait #timer {
+	top:520px;
+	left:140px;
+}
+.horizontal #timer {
+	top:0px;
+	left:20px;
+}
+
+.image {
+	//width: 8%;
+	//font-size: 9px;
+	color: #ccc;
+	font-family: tahoma, verdana, helvetica, sans-serif;
+	border-bottom: 1px dashed #7484A0;
+	//border-top: 1px dashed #7484A0;
+	padding: 2px 2px 2px 2px;
+	vertical-align: text-top;
+}
+
+#info {
+	font-weight: bold;
+	color: #AAAFFF;
+	font-size: 30px;
+}
